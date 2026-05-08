@@ -1,0 +1,20 @@
+1. What is Cloud Computing?
+
+To run an application, you must purchase computing, storage, and hardware. Cloud computing minimizes these upfront expenses, 
+and you can rent or lease hardware from cloud providers such as AWS/Azure/GCP.
+
+
+2. Cloud Computing aims at
+
+Minimize Expenses
+Scalability
+High Availability
+Security
+High Performance
+
+
+3. IaaS VS PaaS VS SaaS
+
+i) Iaas             = Infrastructure as a services
+ii) Pass            = Platform as a services
+iii) Saas           = Software as a services

@@ -1,0 +1,43 @@
+
+i) IaaS (Infrastructure as a Service)
+1. Meaning =           Cloud provider sirf infrastructure deta hai — jaise virtual machines, storage, networking.
+
+2. Features =          Gives full control over infra resources such as virtual machine/storage etc., User ko servers aur infrastructure manage karna padta hai.
+
+3. Admin Responsibility = You must take care of all the admin tasks such as: Patching, Upgrades, Backups
+
+4. Pricing Model       = Pay-per-use
+
+5. Examples            = EC2, VM, GCE
+
+6. Best Use Case       = Ideal choice for lift and shift migration and legacy application.
+
+
+
+ii) PaaS (Platform as a Service)
+1. Meaning  =    Cloud provider ek ready platform deta hai jahan application deploy aur develop kar sakte ho.
+
+2. Features =    Give runtime environment/platform , To deploy application and development tools
+
+3. Admin Responsibility  = Azure takes care of all the admin tasks including automated backups.
+
+4. Pricing Model         = Pay-per-service model
+
+5. Examples              = Azure Web App
+
+6. Best Use Case         = Ideal choice where customer doesn’t want to take care of admin tasks.
+
+
+
+iii) SaaS (Software as a Service)
+1. Meaning              = Ready-made software directly users ko diya jata hai internet ke through.
+
+2. Features             = Gives application access to the end users
+
+3. Admin Responsibility = Azure takes care of all the admin tasks.
+
+4. Pricing Model        = Pay-per-subscription model
+
+5. Examples             = O365, Gmail, Dropbox etc.
+
+6. Best Use Case        = Ideal choice where customer can use the standard version of a cloud application.

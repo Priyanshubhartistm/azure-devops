@@ -1,0 +1,32 @@
+1. On-Premises     
+Sab kuch customer ko manage karna padta hai:   Hardware, Network,OS, Security, Apps,Data
+
+Yani pura control aur puri responsibility user ki.
+
+2. IaaS (Infrastructure as a Service)   
+
+Microsoft/Azure manage karta hai:    Physical Host, Physical Network, Physical Datacenter
+
+Customer manage karta hai:           Operating System, Applications, Network Controls, Data, Accounts
+
+Example     =                        Azure VM, AWS EC2
+
+
+3. PaaS (Platform as a Service)  
+
+Microsoft/Azure manage karta hai:      Operating System, Physical Infrastructure, Runtime Environment
+
+Customer manage karta hai:             Applications,Data, Accounts & Identities
+
+Example:                               Azure App Service
+
+
+
+4. SaaS (Software as a Service)
+
+Microsoft/Azure almost sab manage karta hai:         Application, OS, Infrastructure, Network
+
+Customer mainly manage karta hai                     Data , Users/Accounts, Devices
+
+Example:                                             Gmail, Office 365, Dropbox
+
