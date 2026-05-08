@@ -8,7 +8,7 @@ i) IaaS (Infrastructure as a Service)
 
 4. Pricing Model       = Pay-per-use
 
-5. Examples            = EC2, VM, GCE
+5. Examples            = EC2, VM, GCE 
 
 6. Best Use Case       = Ideal choice for lift and shift migration and legacy application.
 

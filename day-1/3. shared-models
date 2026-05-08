@@ -9,7 +9,7 @@ Microsoft/Azure manage karta hai:    Physical Host, Physical Network, Physical D
 
 Customer manage karta hai:           Operating System, Applications, Network Controls, Data, Accounts
 
-Example     =                        Azure VM, AWS EC2
+Example                              Azure VM, AWS EC2
 
 
 3. PaaS (Platform as a Service)  
