@@ -1,0 +1,31 @@
+What is Azure DevOps 
+
+1. Azure DevOps kya hai?
+- Microsoft ka end-to-end DevOps platform hai.
+- Ismein code likhne se lekar deploy karne, test karne, aur monitor karne tak sab kuch ek jagah hota hai.
+- Pehle iska naam Visual Studio Team Services (VSTS) tha, phir Team Foundation Server (TFS), ab Azure DevOps.
+
+2. Demo/Walkthrough is section mein:
+
+a) Azure DevOps Organization banana:
+- dev.azure.com pe jaake login karte hain (Microsoft account se)
+- Ek Organization create karte hain — yeh aapki company/team ka top-level container hai.
+- Organization ka naam unique hota hai (jaise techtutorialswithpiyush)
+
+b) Azure DevOps Project banana:
+- Organization ke andar Projects hote hain.
+- Har project ek alag application/product ke liye hota hai.
+- Project create karte waqt visibility select karte hain: Private (sirf team dekh sake) ya Public.
+- Version control select karte hain: Git (distributed) ya TFVC (centralized — purana Microsoft wala).
+
+c) Pricing Model:
+- Azure DevOps Services (Cloud/SaaS):
+- Free tier: 5 users tak free, unlimited private Git repos, 1800 minutes/month CI/CD pipeline time
+- Paid: Extra users ke liye per-user charge, aur extra pipeline minutes ke liye
+- Azure DevOps Server (On-Premises):
+- Apne khud ke servers pe install karte hain
+- Licensing alag hoti hai — usually enterprise companies use karte hain jinko data apne paas rakhna ho
+
+d) Hosting Options — Services vs Server:
+- Azure DevOps Services: Microsoft manage karta hai, cloud pe hai, maintenance nahi karna padta, globally available.
+- Azure DevOps Server: Apne data center pe, khud manage karna padta hai, air-gapped/network isolated environments ke liye best.

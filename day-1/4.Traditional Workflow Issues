@@ -1,0 +1,31 @@
+Traditional Build & Deployment Workflow 
+
+Puraana tarika kaise tha:-
+Developer code likhta tha
+Build manually karte the (jar/package banna)
+Testing alag team karti thi
+Deployment ke liye alag team ko request bhejni padti thi
+Sab kuch manual steps se hota tha — slow aur error-prone
+
+
+
+2. Waterfall Model in SDLC 
+
+Traditional SDLC ka sabse puraana model:-
+
+Phases: Requirements → Design → Development → Testing → Deployment → Maintenance
+Har phase pehle wale ke baad shuru hota tha
+Ek baar agla phase shuru ho gaya, peeche jaake change karna mushkil/impossible
+"Big Bang" approach — saara software ek saath release hota tha
+
+
+3. Problems with Traditional SDLC 
+
+purane tarike me kya kya dikkatein thi:-
+
+Slow delivery:                    Months/years lag jaate the ek release me
+Late feedback:                    User ke paas product bahut der se pahunchta tha
+High risk:                        End me sab kuch test hota tha, bugs late pata chalte the
+Difficult to change:              Requirements badalna bahut mushkil tha
+Silos (teams alag-alag):          Dev, QA, Ops alag alag kaam karte the, communication gap hota tha
+Blame game:                       Kuch gadbad ho to ek dusre par blame karte the

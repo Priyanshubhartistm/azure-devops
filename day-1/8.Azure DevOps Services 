@@ -1,0 +1,33 @@
+1. Azure DevOps Services 
+Yeh section mein Piyush 5 core services ka overview deta hai jo Azure DevOps provide karta hai:
+1. Azure Boards
+Agile project management tool.
+Work items (User Stories, Tasks, Bugs) create karke manage karte hain.
+Kanban boards, backlogs, sprints planning sab yahan hota hai.
+Scrum, Agile, CMMI, Basic — koi bhi process template use kar sakte ho.
+2. Azure Repos
+Source control — code store karne ka jagah.
+Git repositories host karta hai (private, unlimited).
+Pull requests, branch policies, code review — sab yahan.
+GitHub ke saath bhi integrate hota hai.
+3. Azure Pipelines
+CI/CD ka engine — sabse powerful part.
+Code push hone pe automatic build, test, aur deploy.
+YAML pipelines aur Classic Editor (GUI) dono support karta hai.
+Any language, any platform — .NET, Java, Node, Python, Go, etc.
+Cloud (Azure, AWS, GCP) kahi bhi deploy kar sakte ho.
+4. Azure Test Plans
+Manual testing aur exploratory testing ke liye.
+Test plans, test suites, aur test cases manage karte hain.
+Browser extension se directly screenshots/notes leke bugs raise kar sakte hain.
+5. Azure Artifacts
+Package management — apni libraries, NuGet, npm, Maven, Python packages host karne ke liye.
+Team ke andar reusable code packages share karne ka tarika.
+Upstream sources se public packages (like npm registry) bhi cache kar sakte hain.
+Piyush yahan briefly batata hai: Aage aane wale videos (Day 2 se Day 16) mein inhi services pe deep dive hoga with hands-on projects.
+5. Outro (26:58 – End)
+Recap: Piyush quickly summarize karta hai ki aaj kya kya cover hua — Cloud basics, IaaS/PaaS/SaaS, Shared Responsibility, Waterfall vs Agile, DevOps, CI/CD, Azure DevOps platform overview.
+Next Video (Day 2) teaser: Azure Boards aur Agile Project Management pe detail mein baat hogi — kaise work items manage karte hain, sprint planning kaise karti hain.
+Call to Action: GitHub repo check karne ko kehta hai (notes aur diagrams ke liye), channel subscribe karne ko kehta hai, aur series mein bane rehne ko kehta hai.
+Discord/Community join karne ka link deta hai questions ke liye.
+Summary: 13:31 ke baad ka video basically "problem se solution tak ka safar" dikhata hai — pehle Waterfall ki problems, phir Agile se unka partial solution, phir DevOps se complete automation ka solution, aur finally Azure DevOps as the one-stop platform jismein ye sab practically implement kar sakte ho.

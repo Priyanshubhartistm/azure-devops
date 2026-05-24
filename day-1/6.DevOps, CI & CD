@@ -1,0 +1,25 @@
+DevOps, CI & CD 
+
+Agile ke baad bhi ek problem bachi: Development team fast kaam kar rahi thi, lekin jab code deploy karna hota tha toh Operations team (jo servers handle karti hai) alag tarike se kaam karti thi. Dono ke beech gap tha — yehhi DevOps solve karta hai.
+
+1. DevOps kya hai?                       DevOps = Development + Operations
+
+Yeh sirf ek tool nahi, ek culture, practices, aur automation ka combination hai.
+Goal: Code likhne se lekar production mein deploy hone tak ka pura process automated aur fast ho jaye.
+Dev aur Ops teams milkar kaam karti hain — "silos" (alag-alag departments) toot jaate hain.
+
+
+2. CI — Continuous Integration
+Developers roz multiple baar apna code ek central repository mein merge karte hain.
+Har merge pe automatic build aur automatic tests chalte hain.
+Isse pata chal jaata hai immediately ki kisi ne toote code toh nahi daala.
+Example tools: Azure Pipelines, Jenkins, GitHub Actions
+
+3. CD — Continuous Delivery / Continuous Deployment
+Continuous Delivery:                         Code automatically build aur test ho ke "ready to deploy" ho jaata hai. Bas ek manual approval/deploy button dabana bachta hai.
+Continuous Deployment:                       Code automatically build, test, aur production mein bhi deploy ho jaata hai — bina kisi manual step ke.
+Isse release cycle dinon/ghanton mein aa jaati hai, instead of months.
+
+ek simple diagram/cycle dikhata hai:           Plan → Code → Build → Test → Release → Deploy → Operate → Monitor → (wapas Plan)
+
+4. CM - Continuous Monitor
