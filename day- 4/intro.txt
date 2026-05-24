@@ -1,0 +1,10 @@
+Day 4: Build Pipeline
+
+
+1. Provision Azure App Service to host the website.
+2. Creating Build Pipelines using the classic editor
+3. Creating build pipeline using YAML
+4. YAML pipeline structure, the difference between jobs, stages, steps, and tasks
+5. Creating a multi-stage CICD pipeline
+6. variables, triggers, Build properties, agents
+7. Publishing and Download Build Artifacts

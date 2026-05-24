@@ -1,0 +1,14 @@
+Day 3: Mastering Git and Source Control in Azure DevOps 
+
+
+1. Introduction to Source Control and Azure Repos
+2. Git vs TFVC
+3. Configure Visual Code
+4. Cloning the repo
+5. Commit changes
+6. Reviewing history
+7. Working with branches
+8. Tagging a release
+9. Managing repository
+10. Managing Pull requests
+11. Sample application code

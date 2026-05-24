@@ -1,0 +1,72 @@
+1. Azure Boards kya hai?
+
+- Azure DevOps ka project management aur work tracking tool hai.
+- Agile teams apna kaam track karne ke liye use karti hain.
+- Jira, Trello, Asana jaise tools ka alternative hai, lekin Azure DevOps ke andar built-in hai.
+- Ismein Kanban boards, backlogs, sprints, dashboards — sab kuch hota hai.
+
+2. Kyun use karte hain?
+
+- Team ka kaam visualize hota hai — kya chal raha hai, kispe hai, kitna bacha hai
+- Sprint planning aur capacity tracking
+- Bugs, features, tasks — sab ek jagah
+- Git commits, pull requests se directly link hota hai (traceability)
+
+
+3. Azure Board Processes: Basic, Agile, Scrum, CMMI
+
+- Jab Azure Boards mein project banate ho, toh pehle Process Template select karna padta hai. 
+
+***  Yeh 4 options hain:
+
+1. Basic (Sabse simple)         = Beginners ke liye best.
+Sirf 3 work item types: Epic → Issue → Task
+
+No complex ceremonies, direct kaam shuru kar sakte ho.
+
+2. Agile (Microsoft ka Agile template)
+Work items: Epic → Feature → User Story → Task
+
+Iterations (Sprints) hote hain, lekin formal Scrum ceremonies nahi enforce karta.
+
+Flexible hai - Agile principles follow karta hai without strict Scrum rules.
+
+3. Scrum (Sabse zyada use hota hai industry mein)
+Work items: Epic → Feature → Product Backlog Item (PBI) → Task → Bug
+
+Formal Scrum follow karta hai: Sprints, Product Backlog, Sprint Backlog, Burndown charts.
+
+PBI = User Story ka equivalent (Microsoft ne iska naam PBI rakha hai)
+
+4. CMMI (Capability Maturity Model Integration)
+Enterprise/government projects ke liye. Heavy documentation aur formal processes required hote hain.
+
+Requirement → Change Request → Task → Bug → Issue
+
+Change tracking, formal approvals - sab strict hota hai.
+- Basic se shuru karo, phir Scrum pe aao — yeh real-world mein sabse zyada use hota hai.
+- Work Items Explained: Epics, Issues, and Tasks
+- Work Item = Azure Boards mein ek unit of work.
+
+Hierarchy samajh lo:
+
+- Epic (Sabse bada)
+- Bada business initiative — months tak chal sakta hai.
+- Example: "Launch New Mobile App" ya "Migrate to Cloud"
+
+
+Feature
+Epic ka ek meaningful part — user ke liye koi functionality.
+Example: "User Login System" ya "Payment Gateway Integration"
+User Story / PBI / Issue
+
+
+Feature ka ek chota tukda — end user ki ek specific need.
+Example: "As a user, I want to login with Google so that I don't need to remember password"
+Agile mein User Story, Scrum mein PBI, Basic mein Issue kehte hain.
+
+
+Task
+Sabse chota unit — ek User Story/PBI complete karne ke liye jo technical steps chahiye.
+Example: "Create database schema for users", "Write API endpoint for OAuth", "Write unit tests"
+ek diagram/cheatsheet dikhata hai — kaise Epic se lekar Task tak hierarchy banti hai.

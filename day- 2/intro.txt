@@ -1,0 +1,15 @@
+Day 2: Azure Boards and Agile Project Management 
+
+1. What are Azure DevOps Boards
+2. What are Azure board processes, agile, scrum, basic, and CMMI
+3. Managing work items in Azure boards
+4. Azure board implementation using basic process
+5. Working with teams, areas, and iterations
+6. Filters in backlogs and boards
+7. Azure board implementation using the scrum process
+8. Sprint planning and capacity planning
+9. Product backlog and taskboard
+10. Customizing Kanban boards
+11. Customizing dashboards
+12. Work item query
+13. Customizing team process

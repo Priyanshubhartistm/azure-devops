@@ -1,0 +1,56 @@
+Creating a New Project with Azure Boards
+
+Live Demo starts here:
+1. dev.azure.com pe jaake apni Organization select karo
+2. New Project → Name do (e.g., AzureBoardsDemo)
+3. Visibility: Private (default) ya Public
+4. Version Control: Git select karo
+5. Work Item Process: Yahan Basic select karta hai Piyush pehle demo ke liye
+6. Project banne ke baad left sidebar mein Boards section dikhta hai:
+- Work Items
+- Boards (Kanban)
+- Backlogs
+- Sprints
+- Queries
+- Delivery Plans
+- Analytics
+
+Adding Work Items and Tasks
+Basic Process pe demo:
+1. Work Items → New Work Item
+2. Type select karo: Epic, Issue, ya Task
+3. Details fill karo:
+Title: "Setup CI/CD Pipeline"
+Assigned To: Team member select karo
+State: New → Active → Resolved → Closed
+Priority: 1 (Critical) se 4 (Low) tak
+Tags: backend, urgent, sprint-1 jaise labels
+Description: Detail mein kya karna hai
+Acceptance Criteria: Kya complete hone pe yeh "done" maana jayega
+
+Parent-Child linking:
+Epic ke andar Issues add karo
+Issue ke andar Tasks add karo
+Isse hierarchy dikh jaati hai
+Piyush batata hai: Real mein ek Issue ke andar 3-5 Tasks hote hain. Har task ko alag bande assign karo.
+
+
+Understanding Iterations and Sprints
+Iteration = Sprint ka Azure DevOps naam
+1. Project Settings → Boards → Iterations
+2. Yahan team ka Iteration Path structure banate hain:
+
+plain
+MyProject
+└── Sprint 1 (Dates: 1 Jan - 14 Jan)
+└── Sprint 2 (Dates: 15 Jan - 28 Jan)
+└── Sprint 3 (Dates: 29 Jan - 11 Feb)
+
+3. Har iteration ka start date aur end date set karna padta hai.
+4. Team Settings mein jaake select karo kaunse sprints active hain.
+
+Backlog mein kaise kaam karta hai:
+
+- Backlog = Saara future ka kaam jo abhi nahi ho raha
+- Jab Sprint start karo, toh Backlog se items uthake active Sprint mein daalte ho
+- Sprint ke end mein jo bacha hai, woh ya toh next sprint mein jaata hai ya backlog mein reh jaata hai

@@ -1,0 +1,17 @@
+Day 1: Introduction to Azure DevOps and Basic Concepts
+
+
+1. What is Cloud Computing
+2. IaaS VS PaaS VS SaaS
+3. What is a Shared Responsibility Model
+4. What is a Traditional Build and Deployment workflow
+5. What is a Waterfall model in SDLC
+6. Problems with the traditional software development life cycle (SDLC)
+7. What is Agile, and how it solve the above challenges
+8. What is DevOps and Why It Matters
+9. What is CI/CD
+10. What is Azure DevOps and a quick walkthrough
+11. Creating an Azure DevOps Organization
+12. Creating an Azure DevOps Project
+13. Azure DevOps Pricing
+14. Azure DevOps hosting options: Azure DevOps Services VS Azure DevOps Server

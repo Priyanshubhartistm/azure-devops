@@ -1,0 +1,8 @@
+Day5: 🚀 Continuous Delivery with Azure DevOps Release Pipeline
+
+Note: this is a continuation of the previous video.
+Automating Deployment with a multi-stage Release Pipelines
+Continuous Deployment Triggers
+Continuous delivery using deployment slots to enable Blue-Green deployment
+Deployment gates such as Query Work Items and Approvals before the prod deployment
+Update the code to test the entire CICD process with the Build and Release pipeline
