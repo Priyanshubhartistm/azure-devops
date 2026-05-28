@@ -1,0 +1,39 @@
+1. Multi-Stage Dockerfile (⭐ Important)
+
+Technique batata hai jo real-world mein use hoti hai:
+
+# ========== STAGE 1: BUILD ==========
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+RUN npm run build
+
+# ========== STAGE 2: PRODUCTION ==========
+FROM nginx:alpine AS production
+
+# Stage 1 se sirf build folder copy karo
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Nginx default port
+EXPOSE 80
+
+# Nginx start karo
+CMD ["nginx", "-g", "daemon off;"]
+
+2. Multi-stage ke fayde:
+
+| Without Multi-stage                  | With Multi-stage           |
+| ------------------------------------ | -------------------------- |
+| Image size: 500MB+                   | Image size: 20-30MB        |
+| Build tools included (security risk) | Sirf production files hain |
+| Source code exposed                  | Source code nahi dikhta    |
+| Slow deployment                      | Fast deployment            |
+| More storage cost                    | Less storage cost          |
+
+
+NOTE :- Production mein hamesha multi-stage Dockerfile use karo.
