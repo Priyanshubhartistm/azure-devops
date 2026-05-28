@@ -1,0 +1,36 @@
+Azure Container Instances (ACI)
+
+1. ACI kya hai?
+
+- Azure ka simplest container hosting service
+- VMs manage karne ki zarurat nahi — sirf container image do, Azure chala dega
+- Serverless — pay per second, jab container chal raha hai tabhi paise
+- Best for: Simple apps, batch jobs, dev/test environments
+- ACI vs AKS (Azure Kubernetes Service):
+
+
+| ACI                           | AKS                                 |
+| ----------------------------- | ----------------------------------- |
+| Single container / small apps | Multiple containers / microservices |
+| No orchestration              | Kubernetes orchestration            |
+| Cheapest for simple use       | Costly but powerful                 |
+| No auto-scaling built-in      | Auto-scaling, self-healing          |
+| Fastest to deploy             | Complex setup                       |
+
+
+
+Day 10 mein ACI use karenge (simple), Day 11 mein AKS (advanced/Kubernetes).
+
+ACI create karna (Azure CLI):
+
+az container create \
+  --resource-group myRG \
+  --name mytodoapp \
+  --image myacr.azurecr.io/todoapp:latest \
+  --cpu 1 \
+  --memory 1 \
+  --ports 80 \
+  --ip-address Public
+
+
+  
