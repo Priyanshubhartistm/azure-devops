@@ -1,0 +1,41 @@
+End-to-End Flow
+
+1. Developer React app mein changes karta hai
+         ↓
+2. Code push → Azure Repos (main branch)
+         ↓
+3. CI Pipeline trigger hoti hai
+   ├─ Docker image build (multi-stage)
+   ├─ Image test hoti hai
+   └─ Image ACR mein push hoti hai
+         ↓
+4. CD Pipeline trigger hoti hai
+   └─ ACI pe purana container replace hota hai
+         ↓
+5. User browser se new version access karta hai
+   URL: http://<<aci-ip-address>
+
+   Outro
+Recap: Containers, Docker architecture, multi-stage Dockerfile, ACI, CI/CD pipeline
+
+Key takeaway: Multi-stage Dockerfile hamesha use karo — choti image, fast deploy, better security
+Next Video (Day 11) teaser: Kubernetes — ACI se aage, production-grade container orchestration
+GitHub repo se Day 10 ke notes, Dockerfile, aur ARM templates download karne ko kehta hai
+
+
+A to Z Summary Table
+
+| Topic               | Kya Seekha                                    |
+| ------------------- | --------------------------------------------- |
+| Container           | Lightweight app package — code + dependencies |
+| VM vs Container     | Container fast, light, portable               |
+| Docker Architecture | Client → Daemon → Registry                    |
+| Dockerfile          | Image banana ka recipe                        |
+| Multi-stage Build   | Choti, secure production images               |
+| ACR                 | Private Docker registry on Azure              |
+| ACI                 | Simple container hosting on Azure             |
+| CI Pipeline         | Build + push Docker image                     |
+| CD Pipeline         | Deploy container to ACI                       |
+| React To-Do App     | Practical containerization example            |
+
+
