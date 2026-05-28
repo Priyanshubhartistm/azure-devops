@@ -1,0 +1,21 @@
+Docker ke 3 main components:
+
+| Component           | Kaam                                                                               |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| **Docker Client**   | CLI se commands dete ho — `docker build`, `docker run`                             |
+| **Docker Daemon**   | Background mein kaam karta hai — images build karna, containers chalana            |
+| **Docker Registry** | Images store karta hai — Docker Hub (public) ya Azure Container Registry (private) |
+
+
+Docker Image vs Container :- 
+1. Image = Blueprint/template (read-only) — jaise class in programming
+2. Container = Running instance of image — jaise object
+
+
+Commands Piyush dikhata hai:
+
+
+docker build -t myapp .      # Image banana
+docker run -p 3000:3000 myapp  # Container chalana
+docker ps                     # Running containers dekho
+docker stop <container-id>    # Container band karo
