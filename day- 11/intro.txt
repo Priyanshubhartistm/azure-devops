@@ -1,0 +1,7 @@
+Basic Introduction of Kubernetes and its benefits
+Kubernetes Architecture
+What is the control plane and its components
+What are Nodes and types of Nodes
+What is a Pod/Deployment/Service
+Azure DevOps CICD Pipeline for a web app running on Kubernetes
+Sample application: My Health Care - Microservices-based Healthcare management app
