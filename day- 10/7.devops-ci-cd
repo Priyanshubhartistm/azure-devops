@@ -1,0 +1,97 @@
+Azure DevOps CI/CD Pipeline for ACI
+
+Prerequisites:
+1. Azure Container Registry (ACR) — Docker images store karne ke liye
+2. Azure DevOps Project — pipeline banane ke liye
+3. Service Connection — Azure DevOps se Azure cloud connect karne ke liye
+
+Step 1: Azure Container Registry (ACR) banana
+
+Azure Portal → Container Registries → Create
+Name: mytodoacr
+SKU: Basic (learning ke liye enough)
+
+Step 2: CI Pipeline — Build & Push Docker Image
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. Code checkout
+- checkout: self
+
+# 2. Build Docker Image (Multi-stage)
+- task: Docker@2
+  displayName: 'Build Docker Image'
+  inputs:
+    containerRegistry: 'myACRConnection'  # Service connection
+    repository: 'todoapp'
+    command: 'buildAndPush'
+    Dockerfile: 'Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
+
+# 3. Publish artifacts (ARM template ya deployment files)
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'drop'
+
+
+Kya ho raha hai:-
+
+Azure DevOps agent pe Docker image build hoti hai
+Multi-stage Dockerfile se small image banti hai
+Image Azure Container Registry mein push hoti hai
+
+Step 3: CD Pipeline — Deploy to ACI
+
+trigger: none
+
+resources:
+  pipelines:
+  - pipeline: ciPipeline
+    source: todoapp-ci
+    trigger: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. ARM Template se ACI deploy karo
+- task: AzureResourceGroupDeployment@2
+  displayName: 'Deploy to ACI'
+  inputs:
+    azureSubscription: 'myAzureSub'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'myRG'
+    location: 'Central India'
+    templateLocation: 'Linked artifact'
+    csmFile: '$(Pipeline.Workspace)/drop/azuredeploy.json'
+    overrideParameters: |
+      -containerImage mytodoacr.azurecr.io/todoapp:$(Build.BuildId)
+
+# 2. Ya phir Azure CLI se
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'myAzureSub'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az container create \
+        --resource-group myRG \
+        --name todoapp-container \
+        --image mytodoacr.azurecr.io/todoapp:$(Build.BuildId) \
+        --cpu 1 \
+        --memory 1 \
+        --ports 80 \
+        --registry-login-server mytodoacr.azurecr.io \
+        --registry-username $(acrUsername) \
+        --registry-password $(acrPassword) \
+        --ip-address Public
+
+
