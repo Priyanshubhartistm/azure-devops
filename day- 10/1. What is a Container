@@ -1,0 +1,19 @@
+1. Container kya hai?
+
+Ek lightweight, standalone, executable package jo app ka code + runtime + libraries + settings sab kuch include karta hai
+Matlab: Tumhara app jis bhi machine pe chale, same tarike se chalega — "It works on my machine" problem khatam
+
+
+2. VM (Virtual Machine) vs Container
+
+
+| Feature         | VM                      | Container                         |
+| --------------- | ----------------------- | --------------------------------- |
+| **Size**        | GBs (heavy)             | MBs (lightweight)                 |
+| **Boot time**   | Minutes                 | Seconds                           |
+| **OS**          | Har VM ka apna full OS  | Host OS share karte hain          |
+| **Performance** | Slower (OS overhead)    | Fast (bare metal jaisa)           |
+| **Isolation**   | Strong (hardware level) | Process level                     |
+| **Portability** | Mushkil                 | Easy — same image kahi bhi chalao |
+
+
