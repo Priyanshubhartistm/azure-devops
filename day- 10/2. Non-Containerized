@@ -1,0 +1,13 @@
+1. Challenges with Non-Containerized Applications
+
+traditional deployment mein kya dikkatein thi:
+
+"Works on my machine"           — developer ke laptop pe chal raha tha, server pe nahi
+Dependency hell                 — ek app ko Node 14 chahiye, dusri ko Node 18, dono same server pe nahi chal sakti
+Environment mismatch            — Dev mein Ubuntu 20.04, Prod mein Ubuntu 18.04, library versions alag
+Resource waste                  — har app ke liye alag VM banana padta tha, cost zyada
+Slow scaling                    — nayi VM banana 10-15 minutes lagta tha
+
+
+
+Containers yeh sab solve karte hain — ek image banao, kahi bhi chalao.
