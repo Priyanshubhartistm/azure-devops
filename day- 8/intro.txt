@@ -1,0 +1,7 @@
+Introduction to IaC and Tools
+Various Terraform commands and workflow
+Creating Terraform configuration files
+Setting up terraform backend with Azure storage
+Executing Terraform commands using CLI
+Azure DevOps CI Pipeline to init, plan, and archive the plan file
+Azure DevOps CD pipeline to apply the changes
