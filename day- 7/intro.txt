@@ -1,0 +1,8 @@
+Overview of Azure Artifacts
+Create the Azure DevOps project and check out the application code
+Set up the infra using Azure Web App
+Create Azure Artifacts feed to host the packages
+Create the CI pipeline that builds the package and pushes it to the feed
+Create the CD pipeline that consumes the package
+Promote the package to trigger the release pipeline
+Upstream packages in Azure Artifacts
