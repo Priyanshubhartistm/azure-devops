@@ -1,0 +1,34 @@
+Sample App: React To-Do List
+Simple frontend app — React JS mein bani
+User tasks add kar sakta hai, delete kar sakta hai
+Isko Dockerize karna hai
+
+
+Dockerfile banana:
+Simple Dockerfile (Single-stage):
+
+
+
+# Base image
+FROM node:18-alpine
+
+# Working directory
+WORKDIR /app
+
+# Dependencies copy karo
+COPY package*.json ./
+RUN npm install
+
+# Source code copy karo
+COPY . .
+
+# Build karo
+RUN npm run build
+
+# Port expose karo
+EXPOSE 3000
+
+# App chalao
+CMD ["npm", "start"]
+
+Problem: Is image ka size 500MB+ hota hai kyunki poora Node.js + build tools + source code sab included hai.
