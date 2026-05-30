@@ -1,0 +1,14 @@
+1. Kubernetes kya hai?
+
+Container Orchestration tool — jab tumhare paas bahut saare Docker containers hain, unko manage, scale, aur deploy karne ke liye
+Google ne banaya tha, ab Cloud Native Computing Foundation (CNCF) manage karta hai
+K8s bhi kehte hain (K + 8 letters + s)
+
+
+2. Kubernetes ke Benefits:
+
+Auto-scaling — load badhe toh automatically containers badh jaayein
+Self-healing — agar koi container crash ho, woh automatically restart ho jaye
+Load balancing — traffic evenly distribute hoti hai containers ke beech
+Rolling updates — bina downtime ke naya version deploy karo
+Rollback — agar naya version fail ho, purana version wapas lao
