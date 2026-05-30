@@ -1,0 +1,19 @@
+Key Commands
+
+# Docker local mein test karna
+docker build -t todoapp .
+docker run -p 3000:3000 todoapp
+docker ps
+docker stop <container-id>
+
+# ACR login
+az acr login --name mytodoacr
+
+# Image push karna
+docker tag todoapp mytodoacr.azurecr.io/todoapp:latest
+docker push mytodoacr.azurecr.io/todoapp:latest
+
+# ACI check karna
+az container show --resource-group myRG --name todoapp-container
+az container logs --resource-group myRG --name todoapp-container
+
